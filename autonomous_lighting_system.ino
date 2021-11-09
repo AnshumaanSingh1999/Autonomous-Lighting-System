@@ -9,7 +9,7 @@ void setup() {
 }  
 void loop() {  
   int sensorStatusphoto = analogRead(photoPIN); 
-  int sensorStatepir = digitalRead(2);
+  int sensorStatepir = digitalRead(PIRpin);
   if (sensorStatusphoto <200)  
   {  
     digitalWrite(LEDpin, HIGH); 
